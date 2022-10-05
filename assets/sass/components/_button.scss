@@ -3,7 +3,7 @@
 
 	button{
 		font-size: 1.2rem;
-		text-transform: uppercase;
+		text-transform: uppercase !important;
 		color: white !important;
 		padding: 10px 15px;
 		border-radius: 5px;
@@ -18,6 +18,11 @@
 .yellow-btn{
 	color: black !important;
 	background: $btn-yellow;
+}
+.gallery-btn{
+	background: $text-color;
+	color: $theme-dark !important;
+
 }
 // --------------------------------------------/
 @media (max-width: $large) {

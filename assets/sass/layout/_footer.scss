@@ -22,6 +22,8 @@ footer {
 		background: $text-color;
 	}
 	.social-pages {
+		display: flex ;
+
 		border: 1px solid $text-color;
 		height: 100%;
 		justify-content: space-around;
@@ -41,3 +43,42 @@ footer {
 		}
 	}
 }
+
+
+$breakpoint1: 777px;
+$breakpoint2: 550px;
+@media (max-width: $breakpoint1) {
+	footer{
+		h1{
+			font-size: 2rem;
+		}
+	}
+  .social-pages{
+	padding: 1rem;
+	h2{
+		font-size: 1.2rem;
+	}
+	.social-accounts{
+		a{
+		font-size: 1rem !important;
+
+		}
+	}
+  }
+}
+
+@media (max-width: $breakpoint2) {
+	.social-pages{
+		display:inline-block !important;
+	  padding: 1rem;
+	  h2{
+		  font-size: 1.2rem;
+	  }
+	  .social-accounts{
+		  a{
+		  font-size: .8rem !important;
+			margin: 0 .2rem !important;
+		  }
+	  }
+	}
+  }
