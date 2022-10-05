@@ -1,34 +1,25 @@
 @import "../abstracts/variables";
+@import '../abstracts/mixins';
 
-
-	.volunteer-btn{
-		a{
-			padding: 10px 15px;
-			border-radius: 5px;
-			border-bottom:none;
-			margin: 0px 5px;
-		}
-		a:hover{
-			border:none;
-		}
+	button{
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		color: white !important;
+		padding: 10px 15px;
+		border-radius: 5px;
+		border-bottom:none;
+		margin: 0px 5px;
+		outline: none !important;
+		@include boxShadow;
 	}
-	
-	.vol a{
-			background: $btn-blue;
-		}
-
-	.don a{
-		background: $btn-yellow;
-		color:$text-black;}
-	
-
-section.sec-footer{
-	.member {
-		.btn{
-			margin-top: -5px;
-		}
-	}
-} 
+.light-btn{
+		background: $theme-light;		
+}
+.yellow-btn{
+	color: black !important;
+	background: $btn-yellow;
+}
+// --------------------------------------------/
 @media (max-width: $large) {
 	section.current-appeals {
 		.appeals-container{

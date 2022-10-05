@@ -19,8 +19,16 @@
 // @import "pages/home";
 
 // 7. Themes
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,900&display=swap');
 @import "themes/default";
 
 @import 'layout/header';
-@import '/assets/sass/components/button'
+@import 'layout/footer';
+@import 'components/button';
+@import 'pages/blog';
 
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
