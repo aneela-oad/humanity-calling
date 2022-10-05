@@ -1,0 +1,42 @@
+@import "../abstracts/variables";
+
+
+	.volunteer-btn{
+		a{
+			padding: 10px 15px;
+			border-radius: 5px;
+			border-bottom:none;
+			margin: 0px 5px;
+		}
+		a:hover{
+			border:none;
+		}
+	}
+	
+	.vol a{
+			background: $btn-blue;
+		}
+
+	.don a{
+		background: $btn-yellow;
+		color:$text-black;}
+	
+
+section.sec-footer{
+	.member {
+		.btn{
+			margin-top: -5px;
+		}
+	}
+} 
+@media (max-width: $large) {
+	section.current-appeals {
+		.appeals-container{
+			.card-body{
+				.btn-donate {
+					font-size: 1rem;
+				}	
+			}
+		}
+	}
+}

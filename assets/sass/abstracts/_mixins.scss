@@ -1,0 +1,10 @@
+@use "./_variables.scss";
+
+// Gradient
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($theme-dark, 0.95),
+    rgba($theme-light, 0.95)
+  );
+}

@@ -1,0 +1,42 @@
+@import "../abstracts/variables";
+
+.menu {
+  // @include gradient;
+  background-color: $theme-dark;
+  padding: 1rem 0rem !important;
+  border-bottom: 5px solid $theme-contrast;
+
+  li {
+    padding: 0 0.7rem;
+
+    .nav-link {
+      color: $white !important;
+      font-size: 1rem;
+      font-weight: 600;
+
+      &.hover,
+      &:hover {
+        color: $white;
+        font-weight: 600;
+      }
+    }
+
+    .dropdown-menu {
+      // @extend .dropdown-menu;
+      background-color: $theme-dark;
+      opacity: 0.8;
+    }
+
+    .dropdown-item {
+      color: $white;
+      font-weight: 600;
+
+      &.hover,
+      &:hover {
+        color: $white;
+        background-color: $theme-contrast;
+        border-radius: 6px;
+      }
+    }
+  }
+}

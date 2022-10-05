@@ -1,0 +1,151 @@
+@import "../abstracts/variables";
+
+.change{
+	background-image: $banner-about-image;
+	background-position:bottom;
+	background-size:cover;
+	padding-top:60px;}
+
+.change h1{
+	color:#006b7c;
+	font-size:50px;}
+
+.change p{
+	font-size:22px;
+	font-weight:100;
+	color:#000;
+	margin-top: 10px;
+	margin-bottom:20px;}
+
+.change .impact{
+	margin-top: 60px;
+	margin-left:50px;
+	position:relative;}
+
+.change .impact-box{
+	position:relative;
+	padding-bottom: 65px;
+    padding-left: 80px;
+	border-left:3px solid #1fbdc4;}
+
+.change .impact-box:last-child{
+	border-left:none;}
+
+.change .impact-box span{
+	background-image:$impact-about-image;
+	display:block;
+	position:absolute;
+	left:-24px;
+	height:48px;
+	width:48px;}
+
+.change .impact-box p{
+	margin:0;}
+
+.plan .title{
+	text-align:left;
+    padding: 50px 0px;}
+
+.plan .steps{
+	background:url(/images/teamwork.png) no-repeat;
+	background-position:center;
+	background-size:cover;
+	padding:40px 0;}
+
+.plan .steps .step-box{
+	margin:20px 0;
+	width:45%;
+	padding:25px 30px;
+	display:inline-block;
+	background:#f7faff;}
+
+.plan .steps .step-box:nth-child(even) {
+	float:right;}
+
+.plan .steps .step-box img{
+	width:85px;
+	height:76px;
+	margin-bottom: 70px;
+	margin-right: 35px;
+	float:left;}
+
+.plan .steps .step-box h3{
+	color:#006b7c;
+	font-size:36px;}
+
+.plan .steps .step-box p{
+	font-size: 22px;
+    margin: 10px 0;
+    line-height: 1.5em;}
+
+.three-bullets{
+	margin:25px 0;}
+
+.three-bullets .hc-container{
+	display:flex;
+	justify-content: space-between;
+    align-items: stretch;}
+
+.three-bullets .bullet{
+	height:185px;
+	width:400px;
+	display:inline-block;
+	vertical-align:middle;}
+
+.three-bullets .bullet h2{
+	font-size:41px;
+	padding-top:65px;
+	padding-left:20px;
+	color:#052d3c;}
+
+.three-bullets .bullet.box2 h2{
+	padding-top:40px;}
+
+.three-bullets .box1{
+	background:url(/images/bullet1.png) no-repeat right;}
+
+.three-bullets .box2{
+	background:url(/images/bullet2.png) no-repeat right;}
+
+.three-bullets .box3{
+	background:url(/images/bullet3.png) no-repeat right;}
+
+.region{
+	background: #006b7c;}
+
+.region h1{
+	font-size:50px;
+	color:#fff;
+	padding-top:50px;}
+
+.region .region-cont{
+	display: flex;}
+
+.region .region-box{
+	padding-right:25px;
+	padding-bottom:30px;
+	width: 25%;}
+
+.region .region-no{
+	background:#eca140;
+	font-weight:100;
+	font-size:40px;
+	color:#006b7c;
+	margin-bottom:30px;
+	width: 65px;
+    text-align: center;
+    padding: 18px 0px 0 0;
+    border-radius: 10px 10px 0px 10px;}
+
+.region h3{
+	color:#fff;
+	font-weight:500;
+	font-size:30px;}
+
+.region p{
+	color:#fff;
+	margin:0;
+	text-align:justify;
+	line-height:1.5em;
+	font-weight:200;
+	font-size:22px;}
