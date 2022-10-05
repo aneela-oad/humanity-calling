@@ -24,11 +24,71 @@ header nav li {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin: 0 0.6rem;
+  transition: 0.3s all ease-in-out;
 }
 header nav li a {
   color: white !important;
+  border-bottom: 1px solid transparent;
+}
+header nav li a:hover {
+  border-bottom: 1px solid #3ba2a8;
+  color: #48dbfb !important;
 }
 
+@media (max-width: 1070px) {
+  header nav li {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+  .taglines p {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .taglines .tags h1 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 980px) {
+  .logo {
+    position: absolute;
+    top: 1.5rem;
+    right: -4rem;
+  }
+  header .fd {
+    position: relative;
+  }
+}
+@media (max-width: 980px) {
+  .logo {
+    right: 0rem;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    right: 1rem;
+  }
+  .logo img {
+    width: 12rem;
+  }
+}
+@media (max-width: 440px) {
+  .taglines p {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .taglines .tags h1 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 330px) {
+  .logo {
+    top: 2rem;
+    right: 3rem;
+  }
+  .logo img {
+    width: 10rem;
+  }
+}
 footer {
   background: #3ba2a8;
   text-align: center;
@@ -40,6 +100,8 @@ footer h1 {
   font-size: 3rem;
 }
 footer .subscribtion {
+  height: 100% !important;
+  width: 100%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   height: 100%;
   padding: 1rem;
@@ -53,8 +115,9 @@ footer .subscribtion h3 {
 }
 footer .social-pages {
   display: flex;
+  height: 100% !important;
+  width: 100%;
   border: 1px solid #fff;
-  height: 100%;
   justify-content: space-around;
   align-items: center;
 }
@@ -69,6 +132,11 @@ footer .social-pages .social-accounts a {
   padding: 0.6rem 1rem;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.3s ease-in-out;
+}
+footer .social-pages .social-accounts a:hover {
+  color: #fff;
+  background: none;
 }
 
 @media (max-width: 777px) {
@@ -87,7 +155,7 @@ footer .social-pages .social-accounts a {
 }
 @media (max-width: 550px) {
   .social-pages {
-    display: inline-block !important;
+    flex-direction: column;
     padding: 1rem;
   }
   .social-pages h2 {
@@ -95,7 +163,7 @@ footer .social-pages .social-accounts a {
   }
   .social-pages .social-accounts a {
     font-size: 0.8rem !important;
-    margin: 0 0.2rem !important;
+    margin: 0 0.4rem !important;
   }
 }
 button {
@@ -112,16 +180,39 @@ button {
 
 .light-btn {
   background: #3ba2a8;
+  border: 3px solid #3ba2a8;
+}
+
+.light-btn:hover {
+  background: none;
+  color: #3ba2a8 !important;
 }
 
 .yellow-btn {
   color: black !important;
   background: #eca140;
+  border: 2px solid #eca140;
+  font-weight: bold;
+}
+
+.yellow-btn:hover {
+  background: none;
+  border: 2px solid #eca140;
+  color: #eca140 !important;
+  font-weight: bold;
 }
 
 .gallery-btn {
   background: #fff;
   color: #006b7c !important;
+}
+
+.fa-cart-plus {
+  font-size: 2rem;
+}
+
+.fa-cart-plus:hover {
+  color: #48dbfb;
 }
 
 @media (max-width: 1200px) {
@@ -463,8 +554,18 @@ button {
   outline: none !important;
 }
 
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.important {
+  font-weight: 550;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
 }
 
 .home-carousel {
@@ -476,11 +577,17 @@ body {
 }
 .home-carousel .carousel-item .carousel-content {
   position: absolute !important;
-  background: yellow !important;
-  margin-top: -10%;
+  background: #3ba2a8 !important;
+  margin-top: -16%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  padding: 1rem;
+}
+.home-carousel .carousel-item .carousel-content span {
+  color: #48dbfb;
 }
 
 .taglines {
@@ -611,4 +718,36 @@ body {
   font-size: 1rem;
   margin: 0 0.5rem;
   color: #3ba2a8;
+}
+
+@media (max-width: 770px) {
+  .current-appeals .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .current-appeals .card-header h1 {
+    font-size: 1.3rem;
+  }
+  .current-appeals .card-footer h3 {
+    font-size: 1.1rem;
+  }
+  .event-tilt h2 {
+    font-size: 1.3rem;
+  }
+  .event-tilt h4 {
+    display: none;
+  }
+  .event-tilt .gallery-btn {
+    width: 100% !important;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 650px) {
+  .current-appeals h2 {
+    font-size: 1rem;
+  }
+  .current-appeals .event-tilt .gallery-btn {
+    font-size: 0.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

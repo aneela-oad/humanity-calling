@@ -355,3 +355,7 @@ button{
 //   background: none;
 //   padding: 0 !important;
 // }
+
+.card:hover{
+  @include boxShadow;
+}

@@ -13,16 +13,39 @@
 		@include boxShadow;
 	}
 .light-btn{
-		background: $theme-light;		
+		background: $theme-light;	
+		border: 3px solid $theme-light;		
+
+}
+.light-btn:hover{
+	background: none;
+	// border: 2px solid $theme-light;	
+	color: $theme-light !important;	
 }
 .yellow-btn{
 	color: black !important;
 	background: $btn-yellow;
+	border: 2px solid $btn-yellow;		
+	font-weight: bold;	
+
+}
+.yellow-btn:hover{
+	background: none;
+	border: 2px solid $btn-yellow;	
+	color: $btn-yellow !important;
+		font-weight: bold;	
 }
 .gallery-btn{
 	background: $text-color;
 	color: $theme-dark !important;
 
+}
+.fa-cart-plus{
+	font-size: 2rem;
+
+}
+.fa-cart-plus:hover{
+	color: #48dbfb;
 }
 // --------------------------------------------/
 @media (max-width: $large) {
