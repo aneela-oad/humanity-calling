@@ -30,8 +30,8 @@
 
 // ----------------current appeals----------
 .current-appeals{
-    background: #dfe6e9;
-    padding:4rem 2rem;
+    margin:  0 !important;
+    // padding:4rem 2rem;
     .card, .card-footer, .card-header, .card-body{
         border: none;
         background: none;
@@ -44,7 +44,7 @@
         justify-content: space-between;
         align-items: center;
         color: $theme-dark;
-        background: white !important;
+        background: #dfe6e9;
         padding: 0 1rem !important;
     }
     .card-footer{
