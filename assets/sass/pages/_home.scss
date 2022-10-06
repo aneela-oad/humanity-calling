@@ -10,7 +10,7 @@
         position: relative !important;
         .carousel-content{
             position: absolute !important;
-           background: $theme-light !important;
+           background: $light-yellow !important;
            margin-top: -16%;
             left: 50%;
             transform: translateX(-50%);
@@ -26,42 +26,17 @@
 }
     }
     
-	.taglines{
-		margin: 0 !important;
-		text-align: center;
-		background: $theme-dark;
-		p{
-			color: $theme-light;
-			font-size: 1.6rem;
-			font-weight: 400;
-		}
-		.tags{
-			display: flex;
-			justify-content: center;
-			// background: yellow  ;
-			h1 {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				// margin: 0 .8rem;
-				color: $text-color;
-				letter-spacing: 2px;
-				span{
-					font-size: 1rem;
-					margin: 0 .5rem;
-					color: $theme-light;
-				}
-			}
-		}
-	}	
+
 
 // ----------------current appeals----------
 .current-appeals{
-
+    background: #dfe6e9;
+    padding:4rem 2rem;
     .card, .card-footer, .card-header, .card-body{
         border: none;
         background: none;
         padding: 0 !important;
+        box-shadow: none !important;
       }
     margin: 6rem auto;
     .card-header{
@@ -69,6 +44,8 @@
         justify-content: space-between;
         align-items: center;
         color: $theme-dark;
+        background: white !important;
+        padding: 0 1rem !important;
     }
     .card-footer{
         padding: 0 !important;
@@ -77,7 +54,7 @@
         background: $theme-dark;
         color: $text-color;
         .left{
-            padding-left: 1rem;
+            padding: 1rem;
         }
         .right{
             background-color: $theme-light;
@@ -121,7 +98,7 @@
 .blogs{
     padding: 4rem 2.2rem;
     background: #f1f1f1;
-    h1, .fa-clock, h3{
+     .fa-clock, h3{
         margin: 1.3rem 0;
         color: $theme-light;
     }
@@ -132,6 +109,9 @@
     .card, .card-header, .card-footer{
         background: white !important;
     }
+    .card:hover h3, .card:hover a{
+        color: $theme-dark
+    }
     a{
         text-decoration: none;
         font-weight: 700;
@@ -139,44 +119,61 @@
     }
 }
 
-
-
-
-
-
-
 .taglines{
-    margin: 0 !important;
-    text-align: center;
-    background: $theme-dark;
-    p{
-        color: $theme-light;
-        font-size: 1.6rem;
-        font-weight: 400;
-    }
-    .tags{
-        display: flex;
+    .smile{
+        @include toAlign ;
+        background: $light-yellow;
+        // align-items: center;
         justify-content: center;
-        // background: yellow  ;
-        h1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // margin: 0 .8rem;
-            color: $text-color;
-            letter-spacing: 2px;
-            span{
-                font-size: 1rem;
-                margin: 0 .5rem;
-                color: $theme-light;
-            }
+        padding: 1rem;
+        h5{
+            letter-spacing: 6px;
+        }
+        img{
+            margin: -7px 0 0 1rem ;
+            width:2rem
         }
     }
 }
+.tag{
+    margin: 2rem auto;
+    color: white;
+    .tag1{
+        background: #95a5a6;
+        width: 100%;
+        @include toAlign;
+        @include boxShadow;
 
-
-
-
+    }
+    .tag2{
+        @include boxShadow;
+        @include toAlign;
+        width: 100%;
+        background: #2980b9;
+    }
+    .tag3{
+        @include boxShadow;
+        background: #8e44ad;
+        @include toAlign;
+        width: 100%;
+    }
+    img{
+        width: 3rem;
+    }
+}
+.donations{
+    text-align: center;
+    h4{
+        color: $theme-dark;
+        padding: .5rem 0;
+    }
+    button{
+        color: white !important;
+    }
+    .card{
+        border-top: 8px solid $light-yellow;
+    }
+}
 
 // --------------------------MEDIA QUERIES----------------
 @media (max-width: 770px){

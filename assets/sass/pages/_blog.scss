@@ -1,21 +1,25 @@
-@import '../abstracts/mixins';
-.blogs{
-    padding: 4rem 2.2rem;
-    background: #f1f1f1;
-    h1, .fa-clock, h3{
-        margin: 1.3rem 0;
-        color: $theme-light;
-    }
-    .card{
-		@include boxShadow;
+// @import '../abstracts/mixins';
+// .blogs{
+//     padding: 4rem 2.2rem;
+//     background: #f1f1f1;
+//     h1, .fa-clock, h3{
+//         margin: 1.3rem 0;
+//         color: $theme-light;
+//     }
+//     .card{
+// 		@include boxShadow;
         
-    }
-    .card, .card-header, .card-footer{
-        background: white !important;
-    }
-    a{
-        text-decoration: none;
-        font-weight: 700;
-        color: $theme-light;
-    }
+//     }
+//     .card, .card-header, .card-footer{
+//         background: white !important;
+//     }
+//     a{
+//         text-decoration: none;
+//         font-weight: 700;
+//         color: $theme-light;
+//     }
+// }
+
+.tags{
+    background: yellow;
 }
