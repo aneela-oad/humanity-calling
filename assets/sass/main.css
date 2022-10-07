@@ -641,30 +641,42 @@ button {
   font-size: 2.5rem;
   padding: 1.2rem !important;
 }
-.current-appeals .event {
+.current-appeals .events {
   display: flex;
   position: relative;
+  background: #006b7c;
 }
-.current-appeals .event .event-tilt {
+.current-appeals .events .left {
+  flex: 1.6;
   -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
   background: #006b7c;
-  height: 100%;
-  width: 50%;
-  z-index: 99;
-  position: absolute;
-  flex: 1;
-  padding: 3rem;
-  color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
 }
-.current-appeals .event .event-tilt h2 {
-  margin: 2rem 0;
+.current-appeals .events .left div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
 }
-.current-appeals .event .event-img {
+.current-appeals .events .left h2 {
+  font-size: 2.7rem;
+}
+.current-appeals .events .left button {
+  border: white !important;
+  color: #006b7c;
+}
+.current-appeals .events .right {
   flex: 2;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
 }
 
 .blogs {
@@ -752,6 +764,24 @@ button {
   border-top: 8px solid #ffeaa7;
 }
 
+@media (max-width: 1000px) {
+  .events {
+    display: block !important;
+  }
+  .events .left {
+    padding: 1rem;
+  }
+  .events .right {
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .carousel-inner {
+    width: 85%;
+    margin: auto;
+  }
+}
 @media (max-width: 770px) {
   .current-appeals .left {
     display: flex;

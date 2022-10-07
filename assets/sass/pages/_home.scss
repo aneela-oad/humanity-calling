@@ -65,31 +65,42 @@
             
         }
     }
-	.event{
+	.events{
 		display: flex;
 		position: relative;
-		.event-tilt{
-			clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
-			background: $theme-dark;
-			height: 100%;
-			width: 50%;
-			z-index: 99;
-			position: absolute;
-			flex: 1;
-			padding: 3rem;
-			color: $text-color;
-			display: flex;
-			justify-content: center;
-			// align-items: center;
-			flex-direction: column;
-			h2{
-				margin: 2rem 0;
-			}
-		}
-		.event-img{
-			flex: 2;
+        background: $theme-dark;
+        // background: yellow;
 
-		}
+        .left{
+            flex: 1.6;
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+            background: $theme-dark;
+            @include toAlign;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: white;
+            div{
+                @include toAlign;
+                flex-direction: column;
+                justify-content: space-evenly;
+                color: white;
+            }
+            h2{
+                font-size: 2.7rem;
+            }
+            button{
+                border: white !important;
+                color: $theme-dark;
+            }
+            
+        }
+        .right{
+            flex: 2;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
+            // border-left: px solid $light-yellow;
+
+
+        }
 	}
    
 }
@@ -176,6 +187,23 @@
 }
 
 // --------------------------MEDIA QUERIES----------------
+@media (max-width: 1000px){
+    .events{
+        display: block !important;
+        .left{
+            padding: 1rem;
+        }
+        .right{
+            clip-path: none !important;
+        }
+    }
+}
+@media (min-width:1200px) and (max-width:1500px){
+    .carousel-inner{
+        width: 85%;
+        margin: auto;
+    }
+}
 @media (max-width: 770px){
 	.current-appeals{
 		.left{
