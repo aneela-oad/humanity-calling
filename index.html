@@ -75,7 +75,7 @@
   <!-- ----------------------Widget Button------------------- -->
 
 
-  <div class="widget-btn" id="widget-btn"> 
+  <div class="widget-btn  d-none d-sm-none d-md-block" id="widget-btn" > 
  
   <button class="btn widget" onclick="showMenu()">Donate Now <i class="fa-solid fa-angles-down"></i></button>
     
@@ -98,13 +98,13 @@
               </select>
 
               <div class="prices">
-                <span class="price">₤50</span>
-                <span class="price">₤100</span>
-                <span class="price">₤250</span>
-                <span class="price">₤500</span>
+                <span class="price" onclick="selectValue(50)">₤50</span>
+                <span class="price" onclick="selectValue(100)">₤100</span>
+                <span class="price" onclick="selectValue(250)">₤250</span>
+                <span class="price" onclick="selectValue(500)">₤500</span>
               </div>
               
-              <input type="text">
+              <input type="text" id="showPrice">
               <select name="donations" id="donations">
                 <option value="sadqa/lillah">Sadqa/Lillah</option>
                 <option value="sadqa ">Sadqa</option>
@@ -128,7 +128,7 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner >
         <div class="carousel-item active">
           
             <img src="/assets/images/carousel/cataract-banner.jpeg" class="d-block w-100" alt="...">
@@ -250,25 +250,27 @@
  
   <!-- ------------------------------------------------ -->
   <section class="current-appeals mt-5" data-aos="zoom-in-right" >
-    <div class="container">
-      <div class="card">
-        <div class="card-header">
-          <div class="right">
-            <h1>CURRENT APPEALS</h1>
-
+    <div class="cp">
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-header">
+            <div class="right">
+              <h1>CURRENT APPEALS</h1>
+  
+            </div>
+            <div class=""> <i class="fas fa-chevron-left"></i> <i class="fas fa-chevron-right"></i></div>
           </div>
-          <div class=""> <i class="fas fa-chevron-left"></i> <i class="fas fa-chevron-right"></i></div>
-        </div>
-        <div class="card-body">
-          <img src="/assets/images/current_appeals/current_appeals_img01.jpeg" alt="current appeals" class="img-fluid">
-        </div>
-        <div class="card-footer d-flex">
-          <div class="left">
-            <h3>Water Project - Pakistan </h3>
-            <p class="text-uppercase d-none d-sm-none d-md-block">“By means of water, we give life to everything.” - Holy Qur’an (21:30)</p>
+          <div class="card-body">
+            <img src="/assets/images/current_appeals/current_appeals_img01.jpeg" style="width:100%" alt="current appeals" class=" cpi">
           </div>
-          <div class="right">
-            <i class="fas fa-chevron-right"></i>
+          <div class="card-footer d-flex">
+            <div class="left">
+              <h3>Water Project - Pakistan </h3>
+              <p class="text-uppercase d-none d-sm-none d-md-block">“By means of water, we give life to everything.” - Holy Qur’an (21:30)</p>
+            </div>
+            <div class="right">
+              <i class="fas fa-chevron-right"></i>
+            </div>
           </div>
         </div>
       </div>

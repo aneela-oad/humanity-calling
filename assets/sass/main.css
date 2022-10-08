@@ -613,7 +613,7 @@ button {
   right: 0rem;
   z-index: 999;
   top: 5rem;
-  height: 100%;
+  height: 90%;
   transition: ease-in-out 0.3s all;
   padding: 0 !important;
 }
@@ -621,10 +621,11 @@ button {
   transform: rotate(-90deg);
   position: absolute;
   z-index: 999;
-  left: -6.5rem;
+  left: -11.1rem;
   bottom: 50%;
   background-color: #22a6b3;
   transform: rotate(-90deg), translateX(-50%);
+  font-size: 2rem;
 }
 .widget-btn .widget i {
   margin: 0 0.7rem;
@@ -686,6 +687,8 @@ button {
 }
 
 .current-appeals {
+  background: #dfe6e9;
+  padding: 1rem;
   margin: 6rem auto;
 }
 .current-appeals .card, .current-appeals .card-footer, .current-appeals .card-header, .current-appeals .card-body {
@@ -700,7 +703,11 @@ button {
   align-items: center;
   color: #006b7c;
   background: #dfe6e9;
-  padding: 0 1rem !important;
+  padding: 0 !important;
+}
+.current-appeals .card-header h1, .current-appeals .card-header i {
+  font-size: 2rem;
+  font-weight: 700;
 }
 .current-appeals .card-footer {
   padding: 0 !important;
@@ -716,7 +723,15 @@ button {
   background-color: #74b9ff;
   margin: 0 !important;
   font-size: 2.5rem;
-  padding: 1.2rem !important;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.current-appeals .card-footer .card-body {
+  width: 100% !important;
+}
+.current-appeals .card-footer .card-body .cpi {
+  width: 100% !important;
 }
 .current-appeals .events {
   display: flex;
@@ -877,7 +892,18 @@ button {
   border-top: 8px solid #ffeaa7;
 }
 
+.prices .price:hover {
+  background: #1fbdc4 !important;
+  color: white;
+  cursor: pointer;
+}
+
 @media (max-width: 1000px) {
+  .widget-btn .widget {
+    left: -11.6rem;
+    bottom: 60%;
+    overflow: hidden;
+  }
   .events {
     display: block !important;
   }
@@ -911,7 +937,7 @@ button {
     align-items: center;
     justify-content: center;
   }
-  .current-appeals .card-header h1 {
+  .current-appeals .card-header h1, .current-appeals .card-header i {
     font-size: 1.3rem;
   }
   .current-appeals .card-footer h3 {
@@ -944,7 +970,24 @@ button {
     text-align: center;
     margin: 1rem auto;
   }
+  .widget-btn {
+    width: 15rem !important;
+    right: 5.8rem;
+  }
+  .widget-btn .widget {
+    left: -12rem;
+    bottom: 60%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 350px) {
+  .widget-btn .widget {
+    left: -13rem;
+    bottom: 60%;
+    overflow: hidden;
+  }
 }
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }/*# sourceMappingURL=main.css.map */
