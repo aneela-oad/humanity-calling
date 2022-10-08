@@ -27,10 +27,20 @@
     }
     
 
+.widget-btn{
+    position: fixed;
+    left: 0;
+    z-index: 99;
+    top: 40%;
+    .widget{
+        transform: rotate(-90deg);
+    background: teal;
 
+    }
+   
+}
 // ----------------current appeals----------
 .current-appeals{
-    margin:  0 !important;
     // padding:4rem 2rem;
     .card, .card-footer, .card-header, .card-body{
         border: none;
@@ -107,8 +117,41 @@
 	
 // ------------------blogs------------------
 .blogs{
-    padding: 4rem 2.2rem;
     background: #f1f1f1;
+    padding-bottom: 5rem;
+    .bg-img{
+        width: 2.2rem;
+        position: absolute;
+    }
+    
+    .butterfly{
+        left: 30%;
+        top:10%;
+        transform: rotate(-45deg);
+
+    }
+    .line{
+        right: 30%;
+        top: 5%;
+    }
+    .horses{
+        top: 90%;
+        right: 2%;
+    }
+    .balloon{
+        top: 90%;
+        left: 2%;
+        transform: rotate(-45deg);
+    }
+    .stars{
+        right: 1%;
+        top: 10%;
+    }
+    .squiggle{
+        transform: rotate(-45deg);
+        top:4%;
+        left: 4%;
+    }
      .fa-clock, h3{
         margin: 1.3rem 0;
         color: $theme-light;
@@ -131,11 +174,13 @@
 }
 
 .taglines{
+    margin: 3rem auto;
     .smile{
         @include toAlign ;
         background: $light-yellow;
         // align-items: center;
         justify-content: center;
+        margin: 0 !important;
         padding: 1rem;
         h5{
             letter-spacing: 6px;
@@ -147,10 +192,11 @@
     }
 }
 .tag{
-    margin: 2rem auto;
+    margin: .8rem 0 0.8rem 0;
     color: white;
     .tag1{
         background: #95a5a6;
+        background: #74b9ff;
         width: 100%;
         @include toAlign;
         @include boxShadow;
@@ -161,12 +207,14 @@
         @include toAlign;
         width: 100%;
         background: #2980b9;
+        background: #22a6b3
     }
     .tag3{
         @include boxShadow;
         background: #8e44ad;
         @include toAlign;
         width: 100%;
+        background: #00cec9;
     }
     img{
         width: 3rem;
@@ -205,6 +253,19 @@
     }
 }
 @media (max-width: 770px){
+    .blogs{
+        padding: 0 !important;
+        .container{
+            .col-12{
+                width: 100% !important;
+                margin: 0 !important;
+            }
+        }
+        .bg-img{
+            display: none;
+        }
+    }
+    
 	.current-appeals{
 		.left{
 			display: flex;
@@ -249,4 +310,13 @@
         }
     }
     
+}
+@media (max-width: 480px){
+    .smile{
+        flex-direction: column-reverse;
+        h5{
+            text-align: center;
+            margin: 1rem auto;
+        }
+    }
 }

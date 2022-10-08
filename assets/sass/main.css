@@ -227,6 +227,7 @@ button {
 .gallery-btn {
   background: #fff;
   color: #006b7c !important;
+  border: none;
 }
 
 .fa-cart-plus {
@@ -607,8 +608,18 @@ button {
   color: #48dbfb;
 }
 
+.widget-btn {
+  position: fixed;
+  left: 0;
+  z-index: 99;
+  top: 40%;
+}
+.widget-btn .widget {
+  transform: rotate(-90deg);
+  background: teal;
+}
+
 .current-appeals {
-  margin: 0 !important;
   margin: 6rem auto;
 }
 .current-appeals .card, .current-appeals .card-footer, .current-appeals .card-header, .current-appeals .card-body {
@@ -680,8 +691,39 @@ button {
 }
 
 .blogs {
-  padding: 4rem 2.2rem;
   background: #f1f1f1;
+  padding-bottom: 5rem;
+}
+.blogs .bg-img {
+  width: 2.2rem;
+  position: absolute;
+}
+.blogs .butterfly {
+  left: 30%;
+  top: 10%;
+  transform: rotate(-45deg);
+}
+.blogs .line {
+  right: 30%;
+  top: 5%;
+}
+.blogs .horses {
+  top: 90%;
+  right: 2%;
+}
+.blogs .balloon {
+  top: 90%;
+  left: 2%;
+  transform: rotate(-45deg);
+}
+.blogs .stars {
+  right: 1%;
+  top: 10%;
+}
+.blogs .squiggle {
+  transform: rotate(-45deg);
+  top: 4%;
+  left: 4%;
 }
 .blogs .fa-clock, .blogs h3 {
   margin: 1.3rem 0;
@@ -702,12 +744,16 @@ button {
   color: #3ba2a8;
 }
 
+.taglines {
+  margin: 3rem auto;
+}
 .taglines .smile {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background: #ffeaa7;
   justify-content: center;
+  margin: 0 !important;
   padding: 1rem;
 }
 .taglines .smile h5 {
@@ -719,11 +765,12 @@ button {
 }
 
 .tag {
-  margin: 2rem auto;
+  margin: 0.8rem 0 0.8rem 0;
   color: white;
 }
 .tag .tag1 {
   background: #95a5a6;
+  background: #74b9ff;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -737,6 +784,7 @@ button {
   align-items: center;
   width: 100%;
   background: #2980b9;
+  background: #22a6b3;
 }
 .tag .tag3 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -745,6 +793,7 @@ button {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  background: #00cec9;
 }
 .tag img {
   width: 3rem;
@@ -783,6 +832,16 @@ button {
   }
 }
 @media (max-width: 770px) {
+  .blogs {
+    padding: 0 !important;
+  }
+  .blogs .container .col-12 {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .blogs .bg-img {
+    display: none;
+  }
   .current-appeals .left {
     display: flex;
     align-items: center;
@@ -811,6 +870,15 @@ button {
   }
   .current-appeals .event-tilt .gallery-btn {
     font-size: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .smile {
+    flex-direction: column-reverse;
+  }
+  .smile h5 {
+    text-align: center;
+    margin: 1rem auto;
   }
 }
 body {
