@@ -60,7 +60,7 @@
               <button class="btn light-btn"> become a volunteer</button>
             </li>
             <li>
-              <button class="btn yellow-btn"> Donate</button>
+              <button class="btn light-btn"> Donate</button>
             </li>
             <li>
               <a href=""> <i class="fa-solid fa-cart-plus"></i></a>
@@ -74,29 +74,49 @@
   <!-- ------header ends------ -->
   <!-- ----------------------Widget Button------------------- -->
 
-  <div class="widget-btn"> 
-    <div class="container">
-      <!-- <button class="btn btn-danger">Donate Now</button> -->
-    <a class="btn widget" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">DONATE NOW</a>
 
-    <div class="row">
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample1">
-          
-        <div class="card">
-          <h5>Lorem Ipsum has been the industry's standard dummy text ever</h5>
+  <div class="widget-btn" id="widget-btn"> 
+ 
+  <button class="btn widget" onclick="showMenu()">Donate Now <i class="fa-solid fa-angles-down"></i></button>
+    
+    
+        <div class="card ">
+          <div class="widget-card">
+          <!-- <h5>Lorem Ipsum has been the industry's standard dummy text ever</h5> -->
           <div class="card-header">
             <button class="light-btn">SINGLE</button>
             <button class="gallery-btn">MONTHLY</button>
           </div>
           <div class="card-body">
+            <form action="/">
+              <select name="services" id="services">
+                <option value="where most need ">Where most need</option>
+                <option value="water and sanitation">Water and sanitation</option>
+                <option value="health"> Health</option>
+                <option value="women empowerment">Women Empowerment</option>
+                <option value="orphans"> Orphans</option>
+              </select>
 
-          </div>
-        </div>        </div>
-      </div>
-      </div>
+              <div class="prices">
+                <span class="price">₤50</span>
+                <span class="price">₤100</span>
+                <span class="price">₤250</span>
+                <span class="price">₤500</span>
+              </div>
+              
+              <input type="text">
+              <select name="donations" id="donations">
+                <option value="sadqa/lillah">Sadqa/Lillah</option>
+                <option value="sadqa ">Sadqa</option>
+                <option value="lillah">Lillah</option>
+              </select>
+              <button type="submit " class="dark-btn mt-5">DONATE NOW</button>
+            </form>
+            
     </div>
     </div>
+    </div>
+  </div>
   <!-- ----------------------Widget Button------------------- -->
   <section class="home-carousel">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -428,6 +448,8 @@
   <script>
     AOS.init();
   </script>
+
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

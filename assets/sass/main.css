@@ -5,14 +5,8 @@ header {
   display: inline-block;
   width: 100%;
 }
-header .head-logo {
-  padding: 20px;
-}
-header nav {
-  margin: 1.5rem auto 1rem auto;
-}
 header nav .dropdown-menu {
-  background: #3ba2a8;
+  background: #74b9ff;
 }
 header nav .dropdown-menu li a {
   font-size: 0.5rem;
@@ -29,9 +23,10 @@ header nav li {
 header nav li a {
   color: white !important;
   border-bottom: 1px solid transparent;
+  font-weight: 600;
 }
 header nav li a:hover {
-  color: #48dbfb !important;
+  color: #74b9ff !important;
 }
 
 @media (max-width: 1070px) {
@@ -112,7 +107,7 @@ header nav li a:hover {
   }
 }
 footer {
-  background: #3ba2a8;
+  background: #74b9ff;
   text-align: center;
   padding: 2rem 2.2rem;
   color: #fff;
@@ -133,7 +128,7 @@ footer .subscribtion button {
   border: none;
 }
 footer .subscribtion h3 {
-  color: #3ba2a8;
+  color: #74b9ff;
 }
 footer .social-pages {
   display: flex;
@@ -150,7 +145,7 @@ footer .social-pages .social-accounts {
 footer .social-pages .social-accounts a {
   margin: 0 1rem;
   background: #fff;
-  color: #3ba2a8;
+  color: #74b9ff;
   padding: 0.6rem 1rem;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -194,33 +189,33 @@ button {
   color: white !important;
   padding: 10px 15px;
   border-radius: 5px;
-  border-bottom: none;
+  border: none;
   margin: 0px 5px;
   outline: none !important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .light-btn {
-  background: #3ba2a8;
-  border: 3px solid #3ba2a8;
+  background: #74b9ff;
+  border: 3px solid #74b9ff;
+  font-weight: 600;
 }
 
 .light-btn:hover {
   background: none;
-  color: #3ba2a8 !important;
+  color: #74b9ff !important;
 }
 
 .yellow-btn {
-  color: black !important;
-  background: #eca140;
-  border: 2px solid #eca140;
-  font-weight: bold;
+  color: white !important;
+  background: #74b9ff;
+  border: 2px solid #74b9ff;
 }
 
 .yellow-btn:hover {
   background: none;
-  border: 2px solid #eca140;
-  color: #eca140 !important;
+  border: 2px solid #ff793f;
+  color: #ff793f !important;
   font-weight: bold;
 }
 
@@ -236,6 +231,11 @@ button {
 
 .fa-cart-plus:hover {
   color: #48dbfb;
+}
+
+.dark-btn {
+  background: #00cec9;
+  border: 2px solid #006b7c;
 }
 
 @media (max-width: 1200px) {
@@ -610,13 +610,79 @@ button {
 
 .widget-btn {
   position: fixed;
-  left: 0;
-  z-index: 99;
-  top: 40%;
+  right: 0rem;
+  z-index: 999;
+  top: 5rem;
+  height: 100%;
+  transition: ease-in-out 0.3s all;
+  padding: 0 !important;
 }
 .widget-btn .widget {
   transform: rotate(-90deg);
-  background: teal;
+  position: absolute;
+  z-index: 999;
+  left: -6.5rem;
+  bottom: 50%;
+  background-color: #22a6b3;
+  transform: rotate(-90deg), translateX(-50%);
+}
+.widget-btn .widget i {
+  margin: 0 0.7rem;
+  color: #ffeaa7;
+}
+.widget-btn .card {
+  background: #74b9ff;
+  width: 20rem;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.widget-btn .widget-card {
+  position: relative;
+  padding: 1rem;
+  height: 100%;
+}
+.widget-btn .widget-card .card-header {
+  padding: 0 0 1rem 0;
+  background: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.widget-btn .widget-card .card-header .light-btn {
+  border: 2px solid #006b7c;
+}
+.widget-btn .widget-card .card-body {
+  padding: 0;
+  width: 100%;
+}
+.widget-btn .widget-card .card-body form {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.widget-btn .widget-card .card-body form input, .widget-btn .widget-card .card-body form button, .widget-btn .widget-card .card-body form select, .widget-btn .widget-card .card-body form .prices {
+  width: 100%;
+  margin: 0.4rem auto;
+}
+.widget-btn .widget-card .card-body form select, .widget-btn .widget-card .card-body form input {
+  padding: 0.7rem 0.4rem;
+}
+.widget-btn .widget-card .card-body form .prices {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+.widget-btn .widget-card .card-body form .prices .price {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 3px;
+  background: white;
+  padding: 0.8rem;
 }
 
 .current-appeals {
@@ -647,7 +713,7 @@ button {
   padding: 1rem;
 }
 .current-appeals .card-footer .right {
-  background-color: #3ba2a8;
+  background-color: #74b9ff;
   margin: 0 !important;
   font-size: 2.5rem;
   padding: 1.2rem !important;
@@ -727,7 +793,7 @@ button {
 }
 .blogs .fa-clock, .blogs h3 {
   margin: 1.3rem 0;
-  color: #3ba2a8;
+  color: #74b9ff;
 }
 .blogs .card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -741,7 +807,7 @@ button {
 .blogs a {
   text-decoration: none;
   font-weight: 700;
-  color: #3ba2a8;
+  color: #74b9ff;
 }
 
 .taglines {
@@ -783,12 +849,10 @@ button {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  background: #2980b9;
   background: #22a6b3;
 }
 .tag .tag3 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  background: #8e44ad;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

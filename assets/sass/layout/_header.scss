@@ -6,11 +6,8 @@ header{
 	display: inline-block;
 	width:100%;
 
-	.head-logo{
-		padding: 20px;
-	}
+	
 	nav{
-		margin: 1.5rem auto 1rem auto;
 		.dropdown-menu{
 			background: $theme-light;
 			li{
@@ -34,10 +31,10 @@ header{
 			a{
 				color: white !important;
 				border-bottom: 1px solid transparent;
-
+				font-weight: 600;
 				&:hover{
 				
-					color:#48dbfb !important;
+					color:#74b9ff !important;
 
 				}
 			}

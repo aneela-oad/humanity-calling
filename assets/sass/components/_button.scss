@@ -7,7 +7,7 @@
 		color: white !important;
 		padding: 10px 15px;
 		border-radius: 5px;
-		border-bottom:none;
+		border:none;
 		margin: 0px 5px;
 		outline: none !important;
 		@include boxShadow;
@@ -15,6 +15,7 @@
 .light-btn{
 		background: $theme-light;	
 		border: 3px solid $theme-light;		
+		font-weight: 600;
 
 }
 .light-btn:hover{
@@ -23,10 +24,9 @@
 	color: $theme-light !important;	
 }
 .yellow-btn{
-	color: black !important;
-	background: $btn-yellow;
-	border: 2px solid $btn-yellow;		
-	font-weight: bold;	
+	color: white !important;
+	background: $btn-blue;
+	border: 2px solid $btn-blue;		
 
 }
 .yellow-btn:hover{
@@ -46,6 +46,10 @@
 }
 .fa-cart-plus:hover{
 	color: #48dbfb;
+}
+.dark-btn{
+	background: #00cec9;
+	border: 2px solid $theme-dark;
 }
 // --------------------------------------------/
 @media (max-width: $large) {
