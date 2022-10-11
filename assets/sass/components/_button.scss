@@ -48,8 +48,10 @@
 	color: #48dbfb;
 }
 .dark-btn{
-	background: #00cec9;
+	background: $theme-contrast;
 	border: 2px solid $theme-dark;
+	color:black !important;
+	font-weight: 600; 
 }
 // --------------------------------------------/
 @media (max-width: $large) {

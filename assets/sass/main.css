@@ -234,8 +234,10 @@ button {
 }
 
 .dark-btn {
-  background: #00cec9;
+  background: #eca140;
   border: 2px solid #006b7c;
+  color: black !important;
+  font-weight: 600;
 }
 
 @media (max-width: 1200px) {
@@ -612,10 +614,11 @@ button {
   position: fixed;
   right: 0rem;
   z-index: 999;
-  top: 5rem;
-  height: 90%;
+  top: 50%;
+  height: 35rem;
   transition: ease-in-out 0.3s all;
   padding: 0 !important;
+  transform: translateY(-50%);
 }
 .widget-btn .widget {
   transform: rotate(-90deg);
@@ -623,16 +626,16 @@ button {
   z-index: 999;
   left: -11.1rem;
   bottom: 50%;
-  background-color: #22a6b3;
   transform: rotate(-90deg), translateX(-50%);
   font-size: 2rem;
+  border: none;
 }
 .widget-btn .widget i {
   margin: 0 0.7rem;
-  color: #ffeaa7;
+  color: black;
 }
 .widget-btn .card {
-  background: #74b9ff;
+  background: #006b7c;
   width: 20rem;
   height: 100%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -890,6 +893,7 @@ button {
 }
 .donations .card {
   border-top: 8px solid #ffeaa7;
+  background: white !important;
 }
 
 .prices .price:hover {

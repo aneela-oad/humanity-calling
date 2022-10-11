@@ -31,10 +31,11 @@
     position: fixed;
     right: 0rem;
     z-index: 999;
-    top: 5rem;
-    height: 90%;
+    top: 50%;
+    height: 35rem;
     transition: ease-in-out .3s all;
     padding: 0 !important;
+    transform: translateY(-50%);
     // display: none;
     .widget{
         transform: rotate(-90deg);
@@ -42,18 +43,20 @@
           z-index: 999;
         left: -11.1rem;
         bottom: 50%;
-        background-color: #22a6b3;
+        // background-color: #22a6b3;
+        // background-color: $theme-dark;
         transform: rotate(-90deg), translateX(-50%);
         // padding: .5rem 2rem;
         font-size: 2rem;
+        border: none;
         i{
             margin: 0 .7rem;
-            color: $light-yellow;
+            color: black;
 
             }
         }
     .card{
-    background: $btn-blue;
+    background: $theme-dark;
     // display: none;
     width: 20rem;
     height: 100%;
@@ -311,6 +314,10 @@
     }
     .card{
         border-top: 8px solid $light-yellow;
+
+        background: white !important;
+
+        
     }
 }
 
