@@ -30,25 +30,28 @@
 .widget-btn{
     position: fixed;
     right: 0rem;
-    z-index: 999;
-    top: 50%;
+    z-index: 99;
+    top: 70%;
     height: 35rem;
     transition: ease-in-out .3s all;
     padding: 0 !important;
-    transform: translateY(-50%);
+    transform: translateY(-67%);
     // display: none;
     .widget{
         transform: rotate(-90deg);
-        position: absolute;
-          z-index: 999;
-        left: -11.1rem;
-        bottom: 50%;
+        // position: absolute;
+        position: fixed;
+          z-index: 9999;
+        margin-left: -6.5rem;
+        // top: 100%;
         // background-color: #22a6b3;
         // background-color: $theme-dark;
-        transform: rotate(-90deg), translateX(-50%);
+        // transform: rotate(-90deg), translateX(-50%);
         // padding: .5rem 2rem;
-        font-size: 2rem;
+        // font-size: 2rem;
         border: none;
+        height: 3rem;
+        top: 3.6rem;
         i{
             margin: 0 .7rem;
             color: black;
@@ -329,14 +332,7 @@
 
 // --------------------------MEDIA QUERIES----------------
 @media (max-width: 1000px){
-    .widget-btn{
-        .widget{
-            left: -11.6rem;
-            bottom: 60%;
-    overflow: hidden;
-
-        }
-    }
+    
     .events{
         display: block !important;
         .left{
@@ -352,6 +348,7 @@
         width: 85%;
         margin: auto;
     }
+    
 }
 @media (max-width: 770px){
     .blogs{
@@ -426,24 +423,13 @@
     }
     
     .widget-btn{
-        width: 15rem !important;
-       right: 5.8rem;
-        .widget{
-            left: -12rem;
-            bottom: 60%;
-              overflow: hidden;
-
-        }
+        top: 40%;
     }
 }
-@media (max-width: 350px){
-   
-    .widget-btn{
-        .widget{
-            left: -13rem;
-            bottom: 60%;
-              overflow: hidden;
 
-        }
+@media (max-width:3000px) and (min-width: 280px){
+    .widget-btn{
+        top: 40%;
+        z-index: 99999;
     }
 }

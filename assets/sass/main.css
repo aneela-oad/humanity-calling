@@ -613,22 +613,21 @@ button {
 .widget-btn {
   position: fixed;
   right: 0rem;
-  z-index: 999;
-  top: 50%;
+  z-index: 99;
+  top: 70%;
   height: 35rem;
   transition: ease-in-out 0.3s all;
   padding: 0 !important;
-  transform: translateY(-50%);
+  transform: translateY(-67%);
 }
 .widget-btn .widget {
   transform: rotate(-90deg);
-  position: absolute;
-  z-index: 999;
-  left: -11.1rem;
-  bottom: 50%;
-  transform: rotate(-90deg), translateX(-50%);
-  font-size: 2rem;
+  position: fixed;
+  z-index: 9999;
+  margin-left: -6.5rem;
   border: none;
+  height: 3rem;
+  top: 3.6rem;
 }
 .widget-btn .widget i {
   margin: 0 0.7rem;
@@ -903,11 +902,6 @@ button {
 }
 
 @media (max-width: 1000px) {
-  .widget-btn .widget {
-    left: -11.6rem;
-    bottom: 60%;
-    overflow: hidden;
-  }
   .events {
     display: block !important;
   }
@@ -975,20 +969,13 @@ button {
     margin: 1rem auto;
   }
   .widget-btn {
-    width: 15rem !important;
-    right: 5.8rem;
-  }
-  .widget-btn .widget {
-    left: -12rem;
-    bottom: 60%;
-    overflow: hidden;
+    top: 40%;
   }
 }
-@media (max-width: 350px) {
-  .widget-btn .widget {
-    left: -13rem;
-    bottom: 60%;
-    overflow: hidden;
+@media (max-width: 3000px) and (min-width: 280px) {
+  .widget-btn {
+    top: 40%;
+    z-index: 99999;
   }
 }
 body {
